@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Personal site</title>
+<title>lehanhcs.github.io</title>
 <body style="background-color:#FDFEFE  ; color:black">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,6 +39,21 @@ h1 {letter-spacing: 6px}
   .tooltip:hover .tooltiptext {
     visibility: visible;
   }
+  a:link {
+      text-decoration: none;
+}
+
+a:visited {
+      text-decoration: none;
+}
+
+a:hover {
+      text-decoration: none;
+}
+
+a:active {
+      text-decoration: none;
+}
   </style>
   
 </head>
@@ -50,12 +65,13 @@ h1 {letter-spacing: 6px}
 <!-- Header -->
 <header class="w3-panel w3-center w3-opacity" style="padding:28px 6px 5px 2px">    
   <div class="w3-top">
-    <div class="w3-bar w3-theme-d2 w3-left-align">
+    <div class="w3-bar w3-border", style="background-color:lightgray; font-weight: bold">
      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-     <a href="index.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>HOME</a>
-     <a href="About_me.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">ABOUT</a>     
+     <a href="index.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>HOME</a>     
+     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">ABOUT</a>     
      <!-- &#x2022<a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Price</a>-->
-     <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">CONTACT</a>
+     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">CONTACT</a>
+     <a href="#analysis" class="w3-bar-item w3-button w3-hide-small w3-hover-white">PUBLICATION ANALYSIS</a>
      <div class="w3-dropdown-hover w3-hide-small">
      <!--
        <button class="w3-button" title="Notifications">Dropdown <i class="fa fa-caret-down"></i></button>     
@@ -64,8 +80,7 @@ h1 {letter-spacing: 6px}
          &#x2022<a href="#" class="w3-bar-item w3-button">Link</a>
          &#x2022<a href="#" class="w3-bar-item w3-button">Link</a>
        </div>-->  
-     </div>
-     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+     </div>     
     </div>
 </header>
 
@@ -78,10 +93,12 @@ h1 {letter-spacing: 6px}
         <td width="1200px">
                          
               <h4 style="color:rgb(150, 101, 150);font-size:24.0pt; font-weight: bold"><a id="id_results">Publications</a></h4>
+              <h6>Last updated: Nov 21, 2023</h6>
               <hr> 
             </td>                        
      </tr>
       </table>    
+      
   
               
       <table align='center'; width=1300px; style="color:burlywood">
@@ -104,9 +121,15 @@ h1 {letter-spacing: 6px}
                 
               </h4>
               <h6><img src="./imgs/author_icon.jpg" width="20" height="20"><b>&nbsp;Thi-Ngoc-Hanh Le</b>, HuiGuang Huang, Yi-Ru Chen, and Tong-Yee Lee </h6>
-              <h6><img src="./imgs/journal_icon.jpg" width="20" height="20">&nbsp;IEEE Transactions on Visualization and Computer Graphics, (TVCG), (Q1, SCI/EI)  </h6>
-              <h6><img src="./imgs/date_icon.png" width="20" height="20">&nbsp; Accepted: October 2023</h6>
-              <h6 style="color:deeppink"><img src="./imgs/link_icon.png" width="20" height="20">&nbsp;&#x2022<a href="10.1109/TVCG.2023.3327825">[DOI]</a> &#x2022<a href="https://arxiv.org/abs/2311.04458">[arXiv]</a> &#x2022<a href="http://graphics.csie.ncku.edu.tw/RETVI">[Project Website]</a> &#x2022<a href="./imgs/RETVI.pdf">[pdf]</a> &#x2022<a href="https://youtu.be/NOYvA2zCxQ0">[demo video]</a></h6>
+              <h6><img src="./imgs/journal_icon.jpg" width="20" height="20">&nbsp;IEEE Transactions on Visualization and Computer Graphics, (<a href="#TVCG">TVCG</a>), (Q1, SCI/EI)  </h6>
+              <h6><img src="./imgs/date_icon.png" width="20" height="20">&nbsp; Accepted: Oct/2023</h6>
+              <h6 style="color:rgb(150, 101, 150); font-weight: bold"><img src="./imgs/link_icon.png" width="20" height="20">&nbsp;
+                &#x2022<a href="10.1109/TVCG.2023.3327825" target="_blank">&nbsp;DOI &nbsp;</a> 
+                &#x2022<a href="https://arxiv.org/abs/2311.04458" target="_blank">&nbsp;arXiv &nbsp;</a> 
+                &#x2022<a href="http://graphics.csie.ncku.edu.tw/RETVI"> &nbsp;Project Website &nbsp;</a> 
+                &#x2022<a href="./imgs/RETVI.pdf" target="_blank">&nbsp;PDF&nbsp;</a> 
+                &#x2022<a href="https://youtu.be/NOYvA2zCxQ0" target="_blank">&nbsp;Demo video&nbsp;</a>
+              </h6>
               </h6>
             </td>            
           </tr>
@@ -131,9 +154,14 @@ h1 {letter-spacing: 6px}
               <td width="750px">
                 <justify><h4 style="color:darkgreen;font-size:14.0pt; font-weight: bold">Regenerating arbitrary video sequences with distillation path-finding</h4>
                   <h6><img src="./imgs/author_icon.jpg" width="20" height="20">&nbsp;<b>Thi-Ngoc-Hanh Le</b>, Shang-Yi Yao, Chun-Te Wu, Tong-Yee Lee </h6>                  
-                  <h6><img src="./imgs/journal_icon.jpg" width="20" height="20">&nbsp;IEEE Transactions on Visualization and Computer Graphics, (TVCG), (Q1, SCI/EI)  </h6>
-                  <h6><img src="./imgs/date_icon.png" width="20" height="20">&nbsp; Accepted: January 2023</h6>
-                  <h6 style="color:deeppink"><img src="./imgs/link_icon.png" width="20" height="20">&nbsp;&#x2022<a href="10.1109/TVCG.2023.3237739">[DOI]</a> &#x2022<a href="https://arxiv.org/abs/2311.04458">[arXiv]</a> &#x2022<a href="http://graphics.csie.ncku.edu.tw/RETVI">[Project Website]</a> &#x2022<a href="./imgs/SDPF.pdf">[pdf]</a> &#x2022<a href="https://youtu.be/IWZhudx1wPY", target="_blank">[demo video]</a></h6>
+                  <h6><img src="./imgs/journal_icon.jpg" width="20" height="20">&nbsp;IEEE Transactions on Visualization and Computer Graphics, (<b>TVCG</b>), (Q1, SCI/EI)  </h6>
+                  <h6><img src="./imgs/date_icon.png" width="20" height="20">&nbsp; Accepted: Jan/2023</h6>
+                  <h6 style="color:rgb(150, 101, 150); font-weight: bold"><img src="./imgs/link_icon.png" width="20" height="20">&nbsp;
+                    &#x2022<a href="10.1109/TVCG.2023.3237739" target="_blank">&nbsp;DOI &nbsp;</a> 
+                    &#x2022<a href="https://arxiv.org/abs/2311.04458" target="_blank">&nbsp;arXiv &nbsp;</a>
+                     &#x2022<a href="http://graphics.csie.ncku.edu.tw/SDPF" target="_blank">&nbsp;Project Website&nbsp;</a> 
+                     &#x2022<a href="./imgs/SDPF.pdf">&nbsp;PDF&nbsp;</a> 
+                     &#x2022<a href="https://youtu.be/IWZhudx1wPY", target="_blank">&nbsp;Demo Video&nbsp;</a></h6>
               </td>            
             </tr>
           </table>
@@ -155,10 +183,14 @@ h1 {letter-spacing: 6px}
                 
                 <td width="750px">
                   <justify><h4 style="color:darkgreen;font-size:14.0pt; font-weight: bold">Image Collage on Arbitrary Shape via Shape Partitioning and Optimization</h4>
-                    <h6><img src="./imgs/author_icon.jpg" width="20" height="20">&nbsp;Dong-Yi Wu, <b>Thi-Ngoc-Hanh Le</b>, Sheng-Yi Yao, Yun-Chen Lin, Tong-Yee Lee* </h6>                  
+                    <h6><img src="./imgs/author_icon.jpg" width="20" height="20">&nbsp;Dong-Yi Wu, <b>Thi-Ngoc-Hanh Le</b>, Sheng-Yi Yao, Yun-Chen Lin, Tong-Yee Lee </h6>                  
                     <h6><img src="./imgs/journal_icon.jpg" width="20" height="20">&nbsp;IEEE Transactions on Visualization and Computer Graphics, (TVCG), (Q1, SCI/EI)  </h6>
-                    <h6><img src="./imgs/date_icon.png" width="20" height="20">&nbsp; Accepted: March 2023 </h6>
-                    <h6 style="color:deeppink"><img src="./imgs/link_icon.png" width="20" height="20">&nbsp;&#x2022<a href="10.1109/TVCG.2023.3262039">[DOI]</a> &#x2022<a href="https://arxiv.org/abs/2311.04458">[arXiv]</a> &#x2022<a href="http://graphics.csie.ncku.edu.tw/RETVI">[Project Website]</a> &#x2022<a href="./imgs/RETVI.pdf">[pdf]</a> [demo video]</h6>
+                    <h6><img src="./imgs/date_icon.png" width="20" height="20">&nbsp; Accepted: Mar/2023 </h6>
+                    <h6 style="color:rgb(150, 101, 150); font-weight: bold"><img src="./imgs/link_icon.png" width="20" height="20">&nbsp;
+                      &#x2022<a href="10.1109/TVCG.2023.3262039" target="_blank">&nbsp;DOI&nbsp;</a> 
+                      &#x2022<a href="https://arxiv.org/abs/2311.04458" target="_blank">&nbsp;arXiv&nbsp;</a> 
+                      &#x2022<a href="http://graphics.csie.ncku.edu.tw/RETVI" target="_blank">&nbsp;Project Website&nbsp;</a> 
+                      &#x2022<a href="./imgs/shape_cloud.pdf" target="_blank">&nbsp;PDF&nbsp;</a></h6>
                 </td>            
               </tr>
             </table>
@@ -180,10 +212,13 @@ h1 {letter-spacing: 6px}
                   
                   <td width="750px">
                     <justify><h4 style="color:darkgreen;font-size:14.0pt; font-weight: bold">Structure-aware Video Style Transfer with Map Art</h4>
-                      <h6><img src="./imgs/author_icon.jpg" width="20" height="20">&nbsp;<b>Thi-Ngoc-Hanh Le</b>, Ya-Hsuan Chen, and Tong-Yee Lee* </h6>                  
+                      <h6><img src="./imgs/author_icon.jpg" width="20" height="20">&nbsp;<b>Thi-Ngoc-Hanh Le</b>, Ya-Hsuan Chen, and Tong-Yee Lee </h6>                  
                       <h6><img src="./imgs/journal_icon.jpg" width="20" height="20">&nbsp;ACM Transaction on Multimedia Computing Communication and Applications, (TOMM), (Q1, SCI/EI)  </h6>
-                      <h6><img src="./imgs/date_icon.png" width="20" height="20">&nbsp; Accepted: November 2022 (Published) </h6>
-                      <h6 style="color:deeppink"><img src="./imgs/link_icon.png" width="20" height="20">&nbsp;&#x2022<a href="https://doi.org/10.1145/3572030">[DOI]</a> &#x2022<a href="https://arxiv.org/abs/2311.04458">[arXiv]</a> &#x2022<a href="http://graphics.csie.ncku.edu.tw/MArtVi">[Project Website]</a> &#x2022<a href="./imgs/RETVI.pdf">[pdf]</a> [demo video]</h6>
+                      <h6><img src="./imgs/date_icon.png" width="20" height="20">&nbsp; Accepted: Nov/2022 (Published: Vol:19, Issue:3s, Article No.: 131) </h6>
+                      <h6 style="color:rgb(150, 101, 150); font-weight: bold"><img src="./imgs/link_icon.png" width="20" height="20">&nbsp;
+                        &#x2022<a href="https://doi.org/10.1145/3572030" target="_blank">&nbsp;DOI&nbsp;</a>                         
+                        &#x2022<a href="http://graphics.csie.ncku.edu.tw/MArtVi" target="_blank">&nbsp;Project Website&nbsp;</a> 
+                        &#x2022<a href="./imgs/MArtVi.pdf">&nbsp;PDF&nbsp;</a> </h6>
                   </td>            
                 </tr>
               </table>
@@ -206,8 +241,10 @@ h1 {letter-spacing: 6px}
                     <justify><h4 style="color:darkgreen;font-size:14.0pt; font-weight: bold">Portrait Map Art generation by Asymmetric Image-to-Image translation</h4>
                     <h6><img src="./imgs/author_icon.jpg" width="20" height="20">&nbsp;Zhang, Yuxin, Fan Tang, Weiming Dong, <b>Thi-Ngoc-Hanh Le</b>, Changsheng Xu, and Tong-Yee Lee </h6>                  
                     <h6><img src="./imgs/journal_icon.jpg" width="20" height="20">&nbsp;Leonardo, (Q1, SCI/EI)  </h6>
-                    <h6><img src="./imgs/date_icon.png" width="20" height="20">&nbsp; Accepted: May 2022 (Published)</h6>
-                    <h6 style="color:deeppink"><img src="./imgs/link_icon.png" width="20" height="20">&nbsp;&#x2022<a href="https://doi.org/10.1162/leon_a_02323">[DOI]</a> &#x2022<a href="https://arxiv.org/abs/2311.04458">[arXiv]</a> &#x2022<a href="http://graphics.csie.ncku.edu.tw/RETVI">[Project Website]</a> &#x2022<a href="./imgs/RETVI.pdf">[pdf]</a> [demo video]</h6>
+                    <h6><img src="./imgs/date_icon.png" width="20" height="20">&nbsp; Accepted: May/2022 (Published)</h6>
+                    <h6 style="color:rgb(150, 101, 150); font-weight: bold"><img src="./imgs/link_icon.png" width="20" height="20">&nbsp;
+                      &#x2022<a href="https://doi.org/10.1162/leon_a_02323" target="_blank">&nbsp;DOI&nbsp;</a> 
+                     </h6>
                   </td>            
                 </tr>
               </table>
@@ -232,8 +269,12 @@ h1 {letter-spacing: 6px}
                     <justify><h4 style="color:darkgreen;font-size:14.0pt; font-weight: bold">Animating Still Natural Images Using Warping</h4>
                     <h6><img src="./imgs/author_icon.jpg" width="20" height="20">&nbsp;<b>Thi-Ngoc-Hanh Le</b>, Chih-Kuo Yeh, Ying-Chi Lin, and Tong-Yee Lee</h6>                  
                     <h6><img src="./imgs/journal_icon.jpg" width="20" height="20">&nbsp;ACM Transaction on Multimedia Computing Communication and Applications, (TOMM), (Q1, SCI/EI)  </h6>
-                    <h6><img src="./imgs/date_icon.png" width="20" height="20">&nbsp; Accepted: January 2022 (Published)</h6>
-                    <h6 style="color:deeppink"><img src="./imgs/link_icon.png" width="20" height="20">&nbsp;&#x2022<a href="https://doi.org/10.1145/3511894">[DOI]</a> &#x2022<a href="https://arxiv.org/abs/2311.04458">[arXiv]</a> &#x2022<a href="http://graphics.csie.ncku.edu.tw/RETVI">[Project Website]</a> &#x2022<a href="./imgs/RETVI.pdf">[pdf]</a> &#x2022<a href="https://youtu.be/IhFLmJkvTf0">[demo video]</a></h6>
+                    <h6><img src="./imgs/date_icon.png" width="20" height="20">&nbsp; Accepted: Jan/2022 (Published)</h6>
+                    <h6 style="color:rgb(150, 101, 150); font-weight: bold"><img src="./imgs/link_icon.png" width="20" height="20">&nbsp;
+                      &#x2022<a href="https://doi.org/10.1145/3511894" target="_blank">&nbsp;DOI&nbsp;</a> 
+                      &#x2022<a href="http://graphics.csie.ncku.edu.tw/animatingimages" target="_blank">&nbsp;Project Website&nbsp;</a> 
+                      &#x2022<a href="./imgs/pcw.pdf" target="_blank">&nbsp;PDF&nbsp;</a> 
+                      &#x2022<a href="https://youtu.be/IhFLmJkvTf0" target="_blank">&nbsp;Demo Video&nbsp;</a></h6>
                   </td>            
                 </tr>
             </table>
@@ -258,8 +299,13 @@ h1 {letter-spacing: 6px}
                     <justify><h4 style="color:darkgreen;font-size:14.0pt; font-weight: bold">Learning a Perceptual Manifold with Deep Features for Animation Video Resequencing</h4>
                     <h6><img src="./imgs/author_icon.jpg" width="20" height="20">&nbsp;Charles C. Morace, <b>Thi-Ngoc-Hanh Le</b>, Sheng-Yi Yao, Shang-Wei Zhang, Tong-Yee Lee</h6>                  
                     <h6><img src="./imgs/journal_icon.jpg" width="20" height="20">&nbsp;Multimedia Tools and Applications, (MTAP), (Q1, SCI/EI)  </h6>
-                    <h6><img src="./imgs/date_icon.png" width="20" height="20">&nbsp; Accepted: January 2022 (Published) </h6>
-                    <h6 style="color:deeppink"><img src="./imgs/link_icon.png" width="20" height="20">&nbsp;&#x2022<a href="https://link.springer.com/article/10.1007/s11042-022-12251-1">[DOI]</a> &#x2022<a href="https://arxiv.org/abs/2311.04458">[arXiv]</a> &#x2022<a href="http://graphics.csie.ncku.edu.tw/RETVI">[Project Website]</a> &#x2022<a href="./imgs/RETVI.pdf">[pdf]</a> [demo video]</h6>
+                    <h6><img src="./imgs/date_icon.png" width="20" height="20">&nbsp; Accepted: Jan/2022 (Published) </h6>
+                    <h6 style="color:rgb(150, 101, 150); font-weight: bold"><img src="./imgs/link_icon.png" width="20" height="20">&nbsp;
+                      &#x2022<a href="https://link.springer.com/article/10.1007/s11042-022-12251-1" target="_blank">&nbsp;DOI&nbsp;</a> 
+                      &#x2022<a href="https://arxiv.org/abs/2311.04458" target="_blank">&nbsp;arXiv&nbsp;</a> 
+                      &#x2022<a href="http://graphics.csie.ncku.edu.tw/RETVI">&nbsp;Project Website&nbsp;</a> 
+                      &#x2022<a href="./imgs/manifold_sequence.pdf">&nbsp;PDF&nbsp;</a> 
+                    </h6>
                   </td>            
                 </tr>
               </table>
@@ -284,8 +330,11 @@ h1 {letter-spacing: 6px}
                     <justify><h4 style="color:darkgreen;font-size:14.0pt; font-weight: bold">Generating Virtual Wire Sculptural Art from 3D Models</h4>
                       <h6><img src="./imgs/author_icon.jpg" width="20" height="20">&nbsp;Chih-Kuo Yeh, <b>Thi-Ngoc-Hanh Le</b>, Zhi-Ying Hou, and Tong-Yee Lee</h6>                  
                       <h6><img src="./imgs/journal_icon.jpg" width="20" height="20">&nbsp;ACM Transaction on Multimedia Computing Communication and Applications, (TOMM), (Q1, SCI/EI)  </h6>
-                      <h6><img src="./imgs/date_icon.png" width="20" height="20">&nbsp; Accepted: July 2021 (Published) </h6>
-                      <h6 style="color:deeppink"><img src="./imgs/link_icon.png" width="20" height="20">&nbsp;&#x2022<a href="https://doi.org/10.1145/3475798">[DOI]</a> &#x2022<a href="https://arxiv.org/abs/2311.04458">[arXiv]</a> &#x2022<a href="http://graphics.csie.ncku.edu.tw/RETVI">[Project Website]</a> &#x2022<a href="./imgs/RETVI.pdf">[pdf]</a> [demo video]</h6>
+                      <h6><img src="./imgs/date_icon.png" width="20" height="20">&nbsp; Accepted: Jul/2021 (Published) </h6>
+                      <h6 style="color:rgb(150, 101, 150); font-weight: bold"><img src="./imgs/link_icon.png" width="20" height="20">&nbsp;
+                        &#x2022<a href="https://doi.org/10.1145/3475798" target="_blank">&nbsp;DOI&nbsp;</a> 
+                        &#x2022<a href="http://graphics.csie.ncku.edu.tw/WireArt" target="_blank">&nbsp;Project Website&nbsp;</a> 
+                        &#x2022<a href="./imgs/WireArt.pdf">&nbsp;PDF&nbsp;</a></h6>
                   </td>            
                 </tr>
               </table>
@@ -308,10 +357,12 @@ h1 {letter-spacing: 6px}
                     
                     <td width="750px">
                       <justify><h4 style="color:darkgreen;font-size:14.0pt; font-weight: bold">Optimized binarization for eggshell carving art</h4>
-                        <h6><img src="./imgs/author_icon.jpg" width="20" height="20">&nbsp;Thi-Ngoc-Hanh Le, Sheng-Yi Yao, Chih-Kuo Yeh, Sheng-Jie Wang, Tong-Yee Lee</h6>                  
+                        <h6><img src="./imgs/author_icon.jpg" width="20" height="20">&nbsp;<b>Thi-Ngoc-Hanh Le</b>, Sheng-Yi Yao, Chih-Kuo Yeh, Sheng-Jie Wang, Tong-Yee Lee</h6>                  
                         <h6><img src="./imgs/journal_icon.jpg" width="20" height="20">&nbsp;SIGGRAPH Asia 2021, 14 TOKYO INTERNATIONAL FORUM, Tokyo, JAPAN</h6>
-                        <h6><img src="./imgs/date_icon.png" width="20" height="20">&nbsp; Accepted: September 2021 (Published) </h6>
-                        <h6 style="color:deeppink"><img src="./imgs/link_icon.png" width="20" height="20">&nbsp;&#x2022<a href="https://doi.org/10.1145/3476124.3488629">[DOI]</a> &#x2022<a href="https://arxiv.org/abs/2311.04458">[arXiv]</a> &#x2022<a href="http://graphics.csie.ncku.edu.tw/RETVI">[Project Website]</a> &#x2022<a href="./imgs/RETVI.pdf">[pdf]</a> [demo video]</h6>
+                        <h6><img src="./imgs/date_icon.png" width="20" height="20">&nbsp; Accepted: Sep/2021 (Published) </h6>
+                        <h6 style="color:rgb(150, 101, 150); font-weight: bold"><img src="./imgs/link_icon.png" width="20" height="20">&nbsp;
+                          &#x2022<a href="https://doi.org/10.1145/3476124.3488629" target="_blank">&nabla;DOI&nbsp;</a> 
+                          &#x2022<a href="./imgs/edge_carving.pdf" target="_blank">&nbsp;PDF&nbsp;</a> </h6>
                     </td>            
                   </tr>
               </table>
@@ -334,10 +385,12 @@ h1 {letter-spacing: 6px}
                     
                     <td width="750px">
                       <justify><h4 style="color:darkgreen;font-size:14.0pt; font-weight: bold">Content-and-disparity-aware Stereoscopic Video Stabilization</h4>
-                        <h6><img src="./imgs/author_icon.jpg" width="20" height="20">&nbsp;Shih-Syun Lin, Thi Ngoc Hanh Le, Pang-Yu Wu, Tong-Yee Lee</h6>                  
+                        <h6><img src="./imgs/author_icon.jpg" width="20" height="20">&nbsp;Shih-Syun Lin, <b>Thi Ngoc Hanh Le</b>, Pang-Yu Wu, Tong-Yee Lee</h6>                  
                         <h6><img src="./imgs/journal_icon.jpg" width="20" height="20">&nbsp;Multimedia Tools and Applications, (MTAP), (Q1, SCI/EI)</h6>
-                        <h6><img src="./imgs/date_icon.png" width="20" height="20">&nbsp; Accepted: August 2020 (Published) </h6>
-                        <h6 style="color:deeppink"><img src="./imgs/link_icon.png" width="20" height="20">&nbsp;&#x2022<a href="https://link.springer.com/article/10.1007/s11042-020-09767-9">[DOI]</a> &#x2022<a href="https://arxiv.org/abs/2311.04458">[arXiv]</a> &#x2022<a href="http://graphics.csie.ncku.edu.tw/RETVI">[Project Website]</a> &#x2022<a href="./imgs/RETVI.pdf">[pdf]</a> [demo video]</h6>
+                        <h6><img src="./imgs/date_icon.png" width="20" height="20">&nbsp; Accepted: Aug/2020 (Published) </h6>
+                        <h6 style="color:rgb(150, 101, 150); font-weight: bold"><img src="./imgs/link_icon.png" width="20" height="20">&nbsp;
+                          &#x2022<a href="https://link.springer.com/article/10.1007/s11042-020-09767-9" target="_blank">&nbsp;DOI&nbsp;</a>                          
+                          &#x2022<a href="./imgs/video_stabilization.pdf" target="_blank">&nbsp;PDF&nbsp;</a></h6>
                     </td>            
                   </tr>
               </table>
@@ -359,10 +412,12 @@ h1 {letter-spacing: 6px}
                     </td>                    
                     <td width="750px">
                       <justify><h4 style="color:darkgreen;font-size:14.0pt; font-weight: bold">Animation Video Resequencing with a Convolutional AutoEncoder</h4>
-                        <h6><img src="./imgs/author_icon.jpg" width="20" height="20">&nbsp;Shang-Wei Zhang, Charles C. Morace, Thi Ngoc Hanh Le, Chih-Kuo Yeh, Sheng-Yi Yao, Shih-Syun Lin, and Tong-Yee Lee</h6>                  
+                        <h6><img src="./imgs/author_icon.jpg" width="20" height="20">&nbsp;Shang-Wei Zhang, Charles C. Morace, <b>Thi Ngoc Hanh Le</b>, Chih-Kuo Yeh, Sheng-Yi Yao, Shih-Syun Lin, and Tong-Yee Lee</h6>                  
                         <h6><img src="./imgs/journal_icon.jpg" width="20" height="20">&nbsp;In SIGGRAPH Asia 2019 Posters (SA '19). Association for Computing Machinery, New York, NY, USA</h6>
-                        <h6><img src="./imgs/date_icon.png" width="20" height="20">&nbsp; Accepted: September 2019 (Published)</h6>
-                        <h6 style="color:deeppink"><img src="./imgs/link_icon.png" width="20" height="20">&nbsp;&#x2022<a href="https://doi.org/10.1145/3355056.3364550">[DOI]</a> &#x2022<a href="https://arxiv.org/abs/2311.04458">[arXiv]</a> &#x2022<a href="http://graphics.csie.ncku.edu.tw/RETVI">[Project Website]</a> &#x2022<a href="./imgs/RETVI.pdf">[pdf]</a> [demo video]</h6>
+                        <h6><img src="./imgs/date_icon.png" width="20" height="20">&nbsp; Accepted: Sep/2019 (Published)</h6>
+                        <h6 style="color:rgb(150, 101, 150); font-weight: bold"><img src="./imgs/link_icon.png" width="20" height="20">&nbsp;
+                          &#x2022<a href="https://doi.org/10.1145/3355056.3364550" target="_blank">&nbsp;DOI&nbsp;</a>                                                     
+                          &#x2022<a href="./imgs/AE_sequence.pdf">&nbsp;PDF&nbsp;</a></h6>
                     </td>            
                   </tr>
               </table>
@@ -384,15 +439,80 @@ h1 {letter-spacing: 6px}
                     </td>                    
                     <td width="750px">
                       <justify><h4 style="color:darkgreen;font-size:14.0pt; font-weight: bold">Generation of Photorealistic QR Codes</h4>
-                        <h6><img src="./imgs/author_icon.jpg" width="20" height="20">&nbsp;Shih-Syun Lin, Yu-Fan Chang, Thi Ngoc Hanh Le, Sheng-Yi Yao, and Tong-Yee Lee</h6>                  
+                        <h6><img src="./imgs/author_icon.jpg" width="20" height="20">&nbsp;Shih-Syun Lin, Yu-Fan Chang, <b>Thi Ngoc Hanh Le</b>, Sheng-Yi Yao, and Tong-Yee Lee</h6>                  
                         <h6><img src="./imgs/journal_icon.jpg" width="20" height="20">&nbsp;In SIGGRAPH Asia 2019 Posters (SA '19). Association for Computing Machinery, New York, NY, USA</h6>
-                        <h6><img src="./imgs/date_icon.png" width="20" height="20">&nbsp; Accepted: September 2019 (Published)</h6>
-                        <h6 style="color:deeppink"><img src="./imgs/link_icon.png" width="20" height="20">&nbsp;&#x2022<a href="https://doi.org/10.1145/3355056.3364574">[DOI]</a> &#x2022<a href="https://arxiv.org/abs/2311.04458">[arXiv]</a> &#x2022<a href="http://graphics.csie.ncku.edu.tw/RETVI">[Project Website]</a> &#x2022<a href="./imgs/RETVI.pdf">[pdf]</a> [demo video]</h6>
+                        <h6><img src="./imgs/date_icon.png" width="20" height="20">&nbsp; Accepted: Sep/2019 (Published)</h6>
+                        <h6 style="color:rgb(150, 101, 150); font-weight: bold"><img src="./imgs/link_icon.png" width="20" height="20">&nbsp;
+                          &#x2022<a href="https://doi.org/10.1145/3355056.3364574" target="_blank">&nbsp;DOI&nbsp;</a>
+                          &#x2022<a href="./imgs/QR_code.pdf">&nbsp;PDF&nbsp;</a></h6>
                     </td>            
                   </tr>
               </table>
-    
+              <hr>
+              <center>
+                <h3 style="color:rgb(150, 101, 150);font-size:18.0pt; font-weight: bold"><a id = "analysis">CONFERENCE METRIC</a></h3>
+              </center>     
+            
+             
+              <table align='center' width ='1000px' border="1" bordercolor="#888888" cellspacing="0" style="border-color:rgb(136,136,136);border-width:1px;border-collapse:collapse">
+  
+                <tr>
+                <td width = '600px' style="text-align:center;height: 40px"> <h5><b>Journal/Conference </b></h5>
+                </td>
+                
+                <td width = '400px' style="text-align:center;height:40px"> <h5><b>Metric </b></h5></td>
+                
+                </tr>
 
+                <tr>
+                  <td style="text-align:center;width:125px;height:40px"> <br />
+                    <h5><a id = "TVCG">IEEE Transactions on Visualization and Computer Graphics</a></h5>
+                    </td>
+                <td style="text-align:center;width:125px;height:40px"> <br />        
+                  <h5>SCI, Q1; IF = 5.226; Rank = 5/133 <br>
+                    Category: Computer Science, Software Engineering
+                  </h5>
+                  
+                </td>               
+                
+                </tr>
+                
+                <tr>
+                  <td style="text-align:center;width:125px;height:40px"> <br />
+                    <h5><a id="TOMM">ACM Transaction on Multimedia Computing Communication and Applications</a></h5>
+                    </td>
+                <td style="text-align:center;width:125px;height:40px"> <br />        
+                  <h5>SCI, Q1; IF = 4.094;  Rank = 5/137 <br>
+                    Category: Computer Science, Theory & Methods
+                    </h5>
+                  
+                </td>               
+                
+                </tr>
+                <tr>
+                  <td style="text-align:center;width:125px;height:40px"> <br />
+                    <h5><a id = "MTAP">Multimedia Tools and Applications</a></h5>
+                    </td>
+                <td style="text-align:center;width:125px;height:40px"> <br />        
+                  <h5>SCI, Q1; IF = 2.973;  Rank = 32/137 <br>
+                    Category: Computer Science, Theory & Methods
+                    </h5>
+                  
+                </td>               
+                </tr>
+                <tr>
+                  <td style="text-align:center;width:125px;height:40px"> <br />
+                    <h5><a id = "leonado">Leonado</a></h5>
+                    </td>
+                <td style="text-align:center;width:125px;height:40px"> <br />        
+                  <h5>Top 1 journal in Art
+                    </h5>
+                  
+                </td>               
+                
+                </tr>
+                   
+                </table>
          
 </div>
 <hr>
