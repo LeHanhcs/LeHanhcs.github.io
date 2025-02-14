@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>lehanhcs.github.io</title>
+<link rel="icon" type="image/x-icon" href="/imgs/favicon.ico">
+<body style="background-color:#FDFEFE  ; color:black">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1 {font-family: "Raleway", Arial, sans-serif}
+h1 {letter-spacing: 6px}
+.w3-row-padding img {margin-bottom: 12px}
+</style>
+<style>
+  #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: blueviolet;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    /*border-bottom: 1px dotted black;*/
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 600px;
+    background-color: #fff;
+    color:darkgrey;
+    text-align: justify;
+    border-radius: 6px;
+    padding: 5px 0;
+    top: -5px;
+    left: 50%;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  a:link {
+      text-decoration: none;
+}
+
+a:visited {
+      text-decoration: none;
+}
+
+a:hover {
+      text-decoration: none;
+}
+
+a:active {
+      text-decoration: none;
+}
+  </style>
+  
+</head>
+<body>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1300px">
+
+<!-- Header -->
+<header class="w3-panel w3-center w3-opacity" style="padding:28px 6px 5px 2px">    
+  <div class="w3-top">
+    <div class="w3-bar w3-border", style="background-color:lightgray; font-weight: bold">
+     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+     <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white"><i class="fa fa-home w3-margin-right"></i>HOME</a>     
+     <a href="publication.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">PUBLICATIONS</a>     
+     <!-- &#x2022<a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Price</a>-->
+     <a href="index.html#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white" on-click>CONTACT</a>
+     <a href="publication.html#analysis" class="w3-bar-item w3-button w3-hide-small w3-hover-white">PUBLICATION METRIC</a>
+     <div class="w3-dropdown-hover w3-hide-small">
+      
+      <button class="w3-button" title="Notifications">COURSES &nbsp;<i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+        <a href="course_PPL_Spring25.html" class="w3-bar-item w3-button">Principles of Programming Languages</a>
+        <a href="course_OOAD_Spring25.html" class="w3-bar-item w3-button">Object – Oriented Analysis and Design</a>
+         <!--<a href="#" class="w3-bar-item w3-button">Link</a>
+         <a href="#" class="w3-bar-item w3-button">Link</a>-->
+       </div>
+     </div>     
+    </div>
+</header>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+      <table align='center'; width="1300px"> 
+        <tr>    
+        <td width="30px">
+                
+        </td>                
+        <td width="1200px">
+                         
+              <h4 style="color:rgb(150, 101, 150);font-size:24.0pt; font-weight: bold"><a>Course name: Principles of Programming Language (Code: IT092IU)</a></h4>
+              <h5>Spring semester 2025</h5>
+              <h5>Class room: A1.208</h5>
+              <hr> 
+            </td>                        
+        </tr>
+        <table align='center'; width="1000px">
+            <tr>    
+                <td width="30px">
+                        
+                </td>                
+                <td width="970px">                                 
+                      <h4 style="font-size:14.0pt; font-weight: bold"><a>Course Learning Outcomes</a></h4>                                
+                       <justify>
+                        <h5>The following are the official course goals agreed upon by the faculty for this course, i.e., students can undestand:</h5>
+                          <h5>
+                          <li> A wide range of programming paradigms </li>
+                          <li> How different programming languages evolved</li> 
+                          <li> The differences in problem domains and language suitability </li>
+                          <li> The basic features of programming language translation </li>
+                          <li> Implementation techniques for selected language constructs </li>
+                        </h5>                        
+                      </justify> <br>
+                      <h4 style="font-size:14.0pt; font-weight: bold"><a>Textbooks</a></h4>                                
+                      <justify>
+                       <h5>
+                        <li>[R1] Robert W. Sebesta, Concepts of programming languages 10th, 2012 </li>
+                        <li>[R2] Alfred Aho, Jeffrey Ullma, Ravi Sethi, Monica Lam, Compilers: Principles, Techniques, and Tools 2nd, 2007 
+                        </li>
+                       </h5>
+                      </justify> <br>
+                      <h4 style="font-size:14.0pt; font-weight: bold"><a>Grading scheme</a></h4>                                
+                      <justify>
+                       <h5>
+                        <li> C1 - Class participation/in-class quiz/exercises: 10% </li>
+                        <li> C2 – Assignments: 15% </li>
+                        <li> C3 - Midterm Exam: 30% </li>
+                        <li> C4 - Final Exam: 40% </li>
+                        <li> C5 - Extra credit will be granted periodically for clever or creative solutions: 5% (Release before the final exam)</li>
+                                             
+                       </h5>
+                      </justify> <br>
+                      <h4 style="font-size:14.0pt; font-weight: bold"><a>Course Materials and Communications</a></h4>                                
+                      <justify>
+                       <h5>
+                        <li>Handouts, ebooks, and related materials for this course are available on Blackboard <a href="https://blackboard.hcmiu.edu.vn">(https://blackboard.hcmiu.edu.vn)</a> <br>
+                        Any assigment will be submitted to Blackboard by the announced due date and time. <br>
+                        Assignments will be graded based on program performance and documentation. <br></li>
+                        <li>The MS Team discussion board is used for <b>all non-personal, course-related communication with the instructor and TA</b>.</li>
+                       </h5>
+                      </justify> <br>
+                      <h4 style="font-size:14.0pt; font-weight: bold"><a>Tentative Class Schedule</a></h4>
+                </td>                        
+            </tr>
+        </table>            
+                    
+            <table align='center' width ='1100px' border="1" bordercolor="#888888" cellspacing="0" style="border-color:rgb(136,136,136);border-width:1px;border-collapse:collapse">
+
+            <tr>
+            <td width = '150px' style="text-align:center;height: 50px"> <h5><b>WEEK</b></h5>
+            </td>
+            <td width = '150px' style="text-align:center;height: 50px"> <h5><b>DATE</b></h5>
+            </td>
+            <td width = '600px' style="text-align:center;height: 50px"> <h5><b>TOPIC</b></h5>
+            </td>
+            <td width = '800px' style="text-align:center;height: 50px"> <h5><b>NOTE</b></h5>
+            </td>
+           
+            </tr>
+            <tr>
+                <td width = '150px' style="text-align:center;height: 50px"> <h5>01</h5>
+                </td>
+                <td width = '150px' style="text-align:center;height: 50px"> <h5>08/02</h5>
+                </td>
+                <td width = '700px' style="text-align:center;height: 50px"> <h5 style="color:rgb(138, 138, 138);">Business trip</h5>
+                </td>                
+                <td width = '700px' style="text-align:center;height: 50px"> <h5 style="color:rgb(138, 138, 138);">no class</h5>
+                </td>
+            </tr>
+            <tr>
+                <td width = '150px' style="text-align:center;height: 50px"> <h5>02</h5>
+                </td>
+                <td width = '150px' style="text-align:center;height: 50px"> <h5>15/02</h5>
+                </td>
+                <td width = '700px' style="text-align:center;height: 50px"> <h5> Introduction</h5>
+                </td>                
+                <td width = '700px' style="text-align:center;height: 50px"> <h5></h5>
+                </td>
+            </tr>
+            <tr>
+                <td width = '150px' style="text-align:center;height: 50px"> <h5>03</h5>
+                </td>
+                <td width = '150px' style="text-align:center;height: 50px"> <h5>22/02</h5>
+                </td>
+                <td width = '700px' style="text-align:center;height: 50px"> <h5>Lexical Analysis</h5>
+                </td>
+                <td width = '700px' style="text-align:center;height: 50px"> <h5></h5>
+                </td>
+
+            </tr>
+            <tr>
+                <td width = '150px' style="text-align:center;height: 50px"> <h5>04</h5>
+                </td>
+                <td width = '150px' style="text-align:center;height: 50px"> <h5>01/03</h5>
+                </td>
+                <td width = '700px' style="text-align:center;height: 50px"> <h5>Lexical Analysis (cont.)</h5>
+                </td>
+                <td width = '700px' style="text-align:center;height: 50px"> <h5></h5>
+                </td>
+                
+                
+            </tr>
+            <tr>
+              <td width = '150px' style="text-align:center;height: 50px"> <h5>05</h5>
+              </td>
+              <td width = '150px' style="text-align:center;height: 50px"> <h5>08/03</h5>
+              </td>
+              <td width = '700px' style="text-align:center;height: 50px"> <h5>Exercises and Revision</h5>
+              </td>
+              <td width = '700px' style="text-align:left;height: 50px"> <h5 style="color:rgb(19, 73, 143);">Presentation topic: <br>Finite Automata in Artificial Intelligence & Machine Learning  <br></h5>
+              
+                <h5 style="text-align:left; color:rgb(187, 39, 138);">Assigment 1</h5>
+              </td>
+              
+              
+          </tr>
+            <tr>
+                <td width = '150px' style="text-align:center;height: 50px"> <h5>06</h5>
+                </td>
+                <td width = '150px' style="text-align:center;height: 50px"> <h5>15/03</h5>
+                </td>
+                <td width = '700px' style="text-align:center;height: 50px"> <h5>Syntax Analysis</h5>
+                </td>               
+                <td width = '700px' style="text-align:center;height: 50px"> <h5></h5>
+                </td>
+            </tr>
+            <tr>
+                <td width = '150px' style="text-align:center;height: 50px"> <h5>07</h5>
+                </td>
+                <td width = '150px' style="text-align:center;height: 50px"> <h5>22/03</h5>
+                </td>
+                <td width = '700px' style="text-align:center;height: 50px"> <h5>Syntax Analysis (cont.)</h5>
+                </td>               
+                <td width = '700px' style="text-align:left;height: 50px"> <h5 style="color:rgb(19, 73, 143);">Invited TA's talk: <br>How PPL can be used to define chatbot commands</h5>
+                </td>                
+            </tr>            
+                
+            
+            <tr>
+                <td width = '150px' style="text-align:center;height: 50px"> <h5>08</h5>
+                </td>
+                <td width = '150px' style="text-align:center;height: 50px"> <h5>29/03</h5>
+                </td>
+                <td width = '700px' style="text-align:center;height: 50px"> <h5>Exercises + Revision</h5>
+                </td>
+                <td width = '700px' style="text-align:center;height: 50px"> <h5></h5>
+                </td>
+            </tr>     
+            
+            <tr>
+                <td width = '150px' style="text-align:center;height: 50px"> <h5>09</h5>
+                </td>
+                <td width = '150px' style="text-align:center;height: 50px"> <h5>05/04</h5>
+                </td>
+                <td width = '700px' style="text-align:center;height: 50px"> <h5 style="color:rgb(187, 39, 138);">Midterm</h5>
+                </td>
+                <td width = '700px' style="text-align:center;height: 50px"> <h5 style="color:rgb(138, 138, 138);">no class</h5>
+                </td>
+              
+            </tr>     
+             
+            <tr>
+                <td width = '150px' style="text-align:center;height: 50px"> <h5>10</h5>
+                </td>
+                <td width = '150px' style="text-align:center;height: 50px"> <h5>12/04</h5>
+                </td>
+                <td width = '700px' style="text-align:center;height: 50px"> <h5 style="color:rgb(187, 39, 138);">Midterm</h5>
+                </td>
+                <td width = '700px' style="text-align:center;height: 50px"> <h5 style="color:rgb(138, 138, 138);">no class</h5>
+                </td>
+               
+            </tr>   
+            <tr>
+              <td width = '150px' style="text-align:center;height: 50px"> <h5>11</h5>
+              </td>
+              <td width = '150px' style="text-align:center;height: 50px"> <h5>19/04</h5>
+              </td>
+              <td width = '700px' style="text-align:center;height: 50px"> <h5>Semantic Analysis</h5>
+              </td>
+              <td width = '700px' style="text-align:center;height: 50px"> <h5></h5>
+              </td>
+              
+          </tr>      
+            <tr>
+            <td width = '150px' style="text-align:center;height: 50px"> <h5>12</h5>
+            </td>
+            <td width = '150px' style="text-align:center;height: 50px"> <h5>26/04</h5>
+            </td>
+            <td width = '700px' style="text-align:center;height: 50px"> <h5>Functional Programming</h5>
+            </td>
+            <td width = '700px' style="text-align:center;height: 50px"> <h5 style="color:rgb(187, 39, 138);">Assigment 2</h5>
+            </td>
+            </tr>   
+            
+            <tr>
+              <td width = '150px' style="text-align:center;height: 50px"> <h5>13</h5>
+              </td>
+              <td width = '150px' style="text-align:center;height: 50px"> <h5>03/05</h5>
+              </td>
+              <td width = '700px' style="text-align:center;height: 50px"> <h5 style="color:rgb(138, 138, 138);">National Holiday</h5>
+              </td>
+              <td width = '700px' style="text-align:center;height: 50px"> <h5 style="color:rgb(138, 138, 138);">no class</h5>
+              </td>
+            </tr>    
+            <tr>
+              <td width = '150px' style="text-align:center;height: 50px"> <h5>14</h5>
+              </td>
+              <td width = '150px' style="text-align:center;height: 50px"> <h5>10/05</h5>
+              </td>
+              <td width = '700px' style="text-align:center;height: 50px"> <h5>Logical Programming</h5>
+              </td>
+              <td width = '700px' style="text-align:left;height: 50px"> <h5 style="color:rgb(19, 73, 143);">Presentation topic: <br>How design choices affect security</h5>
+              </td>
+            </tr>  
+            <tr>
+              <td width = '150px' style="text-align:center;height: 50px"> <h5>15</h5>
+              </td>
+              <td width = '150px' style="text-align:center;height: 50px"> <h5>17/05</h5>
+              </td>
+              <td width = '700px' style="text-align:center;height: 50px"> <h5>Design Patterns in PPL</h5>
+              </td>
+              <td width = '700px' style="text-align:center;height: 50px"> <h5></h5>
+              </td>
+            </tr>
+            <tr>
+              <td width = '150px' style="text-align:center;height: 50px"> <h5>16</h5>
+              </td>
+              <td width = '150px' style="text-align:center;height: 50px"> <h5>24/05</h5>
+              </td>
+              <td width = '700px' style="text-align:center;height: 50px"> <h5>Name - Binding - Scope</h5>
+              </td>
+              <td width = '700px' style="text-align:center;height: 50px"> <h5 style="color:rgb(187, 39, 138);">Assigment 3</h5>
+              </td>
+            </tr>
+            <tr>
+              <td width = '150px' style="text-align:center;height: 50px"> <h5>17</h5>
+              </td>
+              <td width = '150px' style="text-align:center;height: 50px"> <h5>31/05</h5>
+              </td>
+              <td width = '700px' style="text-align:center;height: 50px"> <h5>Code Generation</h5>
+              </td>
+              <td width = '700px' style="text-align:left;height: 50px"> <h5 style="color:rgb(19, 73, 143);">Presentation topic: <br>Manual vs. automatic memory management and Gabage collection</h5>
+              </td>
+            </tr>
+            <tr>
+              <td width = '150px' style="text-align:center;height: 50px"> <h5>18</h5>
+              </td>
+              <td width = '150px' style="text-align:center;height: 50px"> <h5>07/06</h5>
+              </td>
+              <td width = '700px' style="text-align:center;height: 50px"> <h5>Code Optimization</h5>
+              </td>
+              <td width = '700px' style="text-align:center;height: 50px"> <h5></h5>
+              </td>
+            </tr>
+            
+            <tr>
+              <td width = '150px' style="text-align:center;height: 50px"> <h5>19</h5>
+              </td>
+              <td width = '150px' style="text-align:center;height: 50px"> <h5>14/06</h5>
+              </td>
+              <td width = '700px' style="text-align:center;height: 50px"> <h5>Exercises + Course review</h5>
+              </td>
+              <td width = '700px' style="text-align:center;height: 50px"> <h5></h5>
+              </td>
+            </tr>
+            
+
+            </table>
+         
+</div>
+<hr>
+
+
+</body>
+</html>
