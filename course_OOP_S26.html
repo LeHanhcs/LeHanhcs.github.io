@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>lehanhcs.github.io</title>
+<link rel="icon" type="image/x-icon" href="/imgs/favicon.ico">
+<body style="background-color:#FDFEFE  ; color:black">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1 {font-family: "Raleway", Arial, sans-serif}
+h1 {letter-spacing: 6px}
+.w3-row-padding img {margin-bottom: 12px}
+</style>
+<style>
+  #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: blueviolet;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    /*border-bottom: 1px dotted black;*/
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 600px;
+    background-color: #fff;
+    color:darkgrey;
+    text-align: justify;
+    border-radius: 6px;
+    padding: 5px 0;
+    top: -5px;
+    left: 50%;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  a:link {
+      text-decoration: none;
+}
+
+a:visited {
+      text-decoration: none;
+}
+
+a:hover {
+      text-decoration: none;
+}
+
+a:active {
+      text-decoration: none;
+}
+  </style>
+  
+</head>
+<body>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1300px">
+
+<!-- Header -->
+<header class="w3-panel w3-center w3-opacity" style="padding:28px 6px 5px 2px">    
+  <div class="w3-top">
+    <div class="w3-bar w3-border", style="background-color:lightgray; font-weight: bold">
+     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+     <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white"><i class="fa fa-home w3-margin-right"></i>HOME</a>     
+     <a href="publication.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">PUBLICATIONS</a>     
+     <!-- &#x2022<a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Price</a>-->
+     <a href="index.html#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white" on-click>CONTACT</a>
+     <a href="publication.html#analysis" class="w3-bar-item w3-button w3-hide-small w3-hover-white">PUBLICATION METRIC</a>
+     <div class="w3-dropdown-hover w3-hide-small">
+      
+      <button class="w3-button" title="Notifications">COURSES &nbsp;<i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+        <a href="course_PPL_S26.html" class="w3-bar-item w3-button">Principles of Programming Languages</a>
+        <a href="course_OOP_S26.html" class="w3-bar-item w3-button">Object-Oriented Programming</a>
+         <!--<a href="#" class="w3-bar-item w3-button">Link</a>
+         <a href="#" class="w3-bar-item w3-button">Link</a>-->
+       </div>
+     </div>     
+    </div>
+</header>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+      <table align='center'; width="1300px"> 
+        <tr>    
+        <td width="30px">
+                
+        </td>                
+        <td width="1200px">
+                         
+              <h4 style="color:rgb(150, 101, 150);font-size:24.0pt; font-weight: bold"><a>Course name: Object-Oriented Programming (Code: IT069IU)</a></h4>
+              <h5>Spring semester 2026 </h5>
+              <h5>Class rooms: A2.104 & A1.109</h5>
+              <h5><b>Teaching Assistants:</h5>
+              <hr> 
+            </td>                        
+        </tr>      
+
+<table align='center'; width="1000px">
+  <tr>
+
+    <!-- TA 1 -->
+    <td width="50%" style="vertical-align:top; padding-right:40px;">
+      <table>
+        <tr>
+          <td width="160px" style="text-align:center; vertical-align:top;">
+            <img src="./imgs/Thien.jpg"
+                 alt="Teaching Assistant Le Huynh Thien"
+                 style="
+                   width:140px;
+                   height:140px;
+                   object-fit:cover;
+                   border-radius:50%;
+                   border:3px solid #c8a2c8;
+                 ">
+          </td>
+          <td style="vertical-align:top; padding-left:15px;">
+            <h5 style="margin-top:0;"><b>Le Huynh Thien</b></h5>
+            <p style="margin:4px 0;">
+              Email / MS Teams:<br>
+              <a href="mailto:ITCSIU23036@student.hcmiu.edu.vn">
+                ITCSIU23036@student.hcmiu.edu.vn
+              </a>
+            </p>
+            <p style="margin:4px 0; color:gray; font-style:italic;">
+              Support for tutorials and course Q&A in Group 01
+            </p>
+          </td>
+        </tr>
+      </table>
+    </td>
+
+    <!-- TA 2 -->
+    <td width="50%" style="vertical-align:top; padding-left:20px;">
+      <table>
+        <tr>
+          <td width="160px" style="text-align:center; vertical-align:top;">
+            <img src="./imgs/Phuong.jpg"
+                 alt="Teaching Assistant Nguyen Hoang Phuong"
+                 style="
+                   width:140px;
+                   height:140px;
+                   object-fit:cover;
+                   border-radius:50%;
+                   border:3px solid #c8a2c8;
+                 ">
+          </td>
+          <td style="vertical-align:top; padding-left:15px;">
+            <h5 style="margin-top:0;"><b>Nguyen Hoang Phuong</b></h5>
+            <p style="margin:4px 0;">
+              Email / MS Teams:<br>
+              <a href="mailto:ITCSIU23056@student.hcmiu.edu.vn">
+                ITCSIU23056@student.hcmiu.edu.vn
+              </a>
+            </p>
+            <p style="margin:4px 0; color:gray; font-style:italic;">
+              Support for tutorials and course Q&A in Group 02 
+            </p>
+          </td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+<hr> 
+
+        <table align='center'; width="1000px">
+            <tr>    
+                <td width="30px">
+                        
+                </td>                
+                <td width="970px">                                 
+                      <h4 style="font-size:14.0pt; font-weight: bold"><a>Course Learning Outcomes</a></h4>                                
+                       <justify>
+                        <h5>The following are the official course goals agreed upon by the faculty for this course, i.e., students can:</h5>
+                          <h5>
+                          <li> Explain and use concepts in object-oriented programming including classes, objects, abstraction, encapsulation, inheritance, and polymorphism </li>
+                          <li> Apply an object-oriented solution in JAVA programming language</li> 
+                          <li> Analyze design principles and design patterns in object-oriented programing </li>
+
+                        </h5>                        
+                      </justify> <br>
+                      <h4 style="font-size:14.0pt; font-weight: bold"><a>Textbooks</a></h4>                                
+                      <justify>
+                       <h5>                     
+                        <li>[R1] Paul J. Deitel (Author), Harvey Deitel (Author), Java How To Program, 11th Edition, Prentice Hall, 2017 </li>
+                        <li>[R2] Matt Weisfeld, The Object-Oriented Thought Process, 5th Edition, Addison-Wesley, 2019 
+                        </li>
+                        <li>[R3] Erich Gamma, Richard Helm, Ralph Johnson and John Vlissides, Design Patterns: Elements of Reusable Object-Oriented Software, Addison-Wesley Professional, 1994</li>
+                       </h5>
+                      </justify> <br>
+                      <h4 style="font-size:14.0pt; font-weight: bold"><a>Grading scheme</a></h4>                                
+                      <justify>
+                       <h5>
+                        <li> C1 - Class participation/in-class quiz/exercises: 10% </li>
+                        <li> C2 – Assignments: 15% </li>
+                        <li> C3 - Midterm Exam: 30% </li>
+                        <li> C4 - Final Exam: 40% </li>
+                        <li> C5 - Extra credit will be granted periodically for clever or creative solutions: 5% </li>
+                                             
+                       </h5>
+                      </justify> <br>
+                      <h4 style="font-size:14.0pt; font-weight: bold"><a>Course Materials and Communications</a></h4>                                
+                      <justify>
+                       <h5>
+                        <li>Handouts, ebooks, and related materials for this course are available on Blackboard <a href="https://blackboard.hcmiu.edu.vn">(https://blackboard.hcmiu.edu.vn)</a> <br>
+                        Any assigment will be submitted to Blackboard by the announced due date and time. <br>
+                        Assignments will be graded based on program performance and documentation. <br></li>
+                        <li>The MS Team discussion board is used for <b>all non-personal, course-related communication with the instructor and TAs</b>.</li>
+                       </h5>
+                      </justify> <br>
+                      <h4 style="font-size:14.0pt; font-weight: bold"><a>Tentative Class Schedule</a></h4>
+                </td>                        
+            </tr>
+        </table>            
+                    
+            <table align='center' width ='1100px' border="1" bordercolor="#888888" cellspacing="0" style="border-color:rgb(136,136,136);border-width:1px;border-collapse:collapse">
+
+            <tr>
+            <td width = '100px' style="text-align:center;height: 50px"> <h5><b>WEEK</b></h5>
+            </td>
+            <td width = '250px' style="text-align:center;height: 50px"> <h5><b>DATE</b></h5>
+            </td>
+            <td width = '600px' style="text-align:center;height: 50px"> <h5><b>TOPIC</b></h5>
+            </td>
+            <td width = '400px' style="text-align:center;height: 50px"> <h5><b>NOTE</b></h5>
+            </td>
+           
+            </tr>            
+            <tr>
+                <td width = '100px' style="text-align:center;height: 50px"> <h5>01</h5>
+                </td>
+                <td width = '150px' style="text-align:center;height: 50px"> <h5>19/01 ~ 24/01</h5>
+                </td>
+                <td width = '600px' style="text-align:center;height: 50px"> <h5> Introduction</h5>
+                </td>                
+                <td width = '400px' style="text-align:center;height: 50px"> <h5></h5>
+                </td>
+            </tr>
+            <tr>
+                <td width = '100px' style="text-align:center;height: 50px"> <h5>02</h5>
+                </td>
+                <td width = '150px' style="text-align:center;height: 50px"> <h5>26/01 - 31/01</h5>
+                </td>
+                <td width = '600px' style="text-align:center;height: 50px"> <h5>Computer Programming & Java Application</h5>
+                </td>
+                <td width = '400px' style="text-align:center;height: 50px"> <h5></h5>
+                </td>
+
+            </tr>
+            <tr>
+                <td width = '100px' style="text-align:center;height: 50px"> <h5>03</h5>
+                </td>
+                <td width = '150px' style="text-align:center;height: 50px"> <h5>02/02 - 07/02</h5>
+                </td>
+                <td width = '600px' style="text-align:center;height: 50px"> <h5 style="text-align:center; color:rgba(190, 188, 189, 0.966);">Business trip</h5>
+                </td>
+                <td width = '400px' style="text-align:center;height: 50px"> <h5 style="text-align:center; color:rgba(190, 188, 189, 0.966);">No class</h5>
+                </td>
+                
+                
+            </tr>
+            <tr>
+              <td width = '100px' style="text-align:center;height: 50px"> <h5>04</h5>
+              </td>
+              <td width = '150px' style="text-align:center;height: 50px"> <h5>23/02 - 28/02</h5>
+              </td>
+              <td width = '600px' style="text-align:center;height: 50px"> <h5>Class & Objects</h5>
+              </td>
+              <td width = '400px' style="text-align:left;height: 50px">            
+                <h5 style="text-align:center; color:rgb(187, 39, 138);">Assigment 1</h5>
+              </td>
+              
+              
+          </tr>
+            <tr>
+                <td width = '100px' style="text-align:center;height: 50px"> <h5>05</h5>
+                </td>
+                <td width = '150px' style="text-align:center;height: 50px"> <h5>02/03 - 07/03</h5>
+                </td>
+                <td width = '600px' style="text-align:center;height: 50px"> <h5>Methods and a deeper look</h5>
+                </td>               
+                <td width = '400px' style="text-align:center;height: 50px"> <h5></h5>
+                </td>
+            </tr>
+
+            <tr>
+                <td width = '100px' style="text-align:center;height: 50px"> <h5>06</h5>
+                </td>
+                <td width = '150px' style="text-align:center;height: 50px"> <h5>09/03 - 14/03</h5>
+                </td>
+                <td width = '600px' style="text-align:center;height: 50px"> <h5>Inheritance</h5>
+                </td>               
+                <td width = '400px' style="text-align:left;height: 50px"> <h5></h5>
+                </td>                
+            </tr>            
+                
+            
+            <tr>
+                <td width = '100px' style="text-align:center;height: 50px"> <h5>07</h5>
+                </td>
+                <td width = '150px' style="text-align:center;height: 50px"> <h5>16/03 - 21/03</h5>
+                </td>
+                <td width = '600px' style="text-align:center;height: 50px"> <h5 style="text-align:center; color:rgb(187, 39, 138);">Midtern Examination</h5>
+                </td>
+                <td width = '400px' style="text-align:center;height: 50px"> <h5></h5>
+                </td>
+            </tr>     
+            
+            <tr>
+                <td width = '100px' style="text-align:center;height: 50px"> <h5>08</h5>
+                </td>
+                <td width = '150px' style="text-align:center;height: 50px"> <h5>23/03 - 28/03</h5>
+                </td>
+                <td width = '600px' style="text-align:center;height: 50px"> <h5>Polymorphism</h5>
+                </td>
+                <td width = '400px' style="text-align:center;height: 50px"> <h5></h5>
+                </td>
+              
+            </tr>     
+             
+            <tr>
+                <td width = '100px' style="text-align:center;height: 50px"> <h5>09</h5>
+                </td>
+                <td width = '150px' style="text-align:center;height: 50px"> <h5>30/03 - 04/04</h5>
+                </td>
+                <td width = '600px' style="text-align:center;height: 50px"> <h5>Design with classes and intefaces</h5>
+                </td>
+                <td width = '400px' style="text-align:center;height: 50px"> 
+                </td>
+               
+            </tr>   
+            <tr>
+              <td width = '100px' style="text-align:center;height: 50px"> <h5>10</h5>
+              </td>
+              <td width = '150px' style="text-align:center;height: 50px"> <h5>06/04 - 11/04</h5>
+              </td>
+              <td width = '600px' style="text-align:center;height: 50px"> <h5>Building Objects’ relationships</h5>
+              </td>
+              <td width = '400px' style="text-align:center;height: 50px"> <h5 style="text-align:center; color:rgb(187, 39, 138);">Assigment 2</h5>
+              </td>
+              
+          </tr>      
+            <tr>
+            <td width = '100px' style="text-align:center;height: 50px"> <h5>11</h5>
+            </td>
+            <td width = '150px' style="text-align:center;height: 50px"> <h5>13/04 - 18/04</h5>
+            </td>
+            <td width = '600px' style="text-align:center;height: 50px"> <h5>Generic class and methods</h5>
+            </td>
+            <td width = '400px' style="text-align:center;height: 50px"> <h5></h5>
+            </td>
+            </tr>   
+            
+            <tr>
+              <td width = '100px' style="text-align:center;height: 50px"> <h5>12</h5>
+              </td>
+              <td width = '150px' style="text-align:center;height: 50px"> <h5>20/04 - 25/04</h5>
+              </td>
+              <td width = '600px' style="text-align:center;height: 50px"> <h5>Design Patterns</h5>
+              </td>
+              <td width = '400px' style="text-align:center;height: 50px"> <h5></h5>
+              </td>
+            </tr>    
+            <tr>
+              <td width = '100px' style="text-align:center;height: 50px"> <h5>13</h5>
+              </td>
+              <td width = '150px' style="text-align:center;height: 50px"> <h5>27/04 - 02/05</h5>
+              </td>
+              <td width = '600px' style="text-align:center;height: 50px"> <h5 style="text-align:center; color:rgba(190, 188, 189, 0.966);">National Holiday</h5>
+              </td>
+              <td width = '400px' style="text-align:left;height: 50px"> <h5 style="text-align:center; color:rgba(190, 188, 189, 0.966);">No class</h5>
+              </td>
+            </tr>  
+            <tr>
+              <td width = '100px' style="text-align:center;height: 50px"> <h5>14</h5>
+              </td>
+              <td width = '150px' style="text-align:center;height: 50px"> <h5>04/05 - 09/05</h5>
+              </td>
+              <td width = '600px' style="text-align:center;height: 50px"> <h5>Design Patterns (cont.)</h5>
+              </td>
+              <td width = '400px' style="text-align:center;height: 50px"> <h5></h5>
+              </td>
+            </tr>
+            <tr>
+              <td width = '100px' style="text-align:center;height: 50px"> <h5>15</h5>
+              </td>
+              <td width = '150px' style="text-align:center;height: 50px"> <h5>11/05 - 16/05</h5>
+              </td>
+              <td width = '600px' style="text-align:center;height: 50px"> <h5>SOLID principles</h5>
+              </td>
+              <td width = '400px' style="text-align:center;height: 50px"> <h5></h5>
+              </td>
+            </tr>
+                 <tr>
+              <td width = '100px' style="text-align:center;height: 50px"> <h5>16</h5>
+              </td>
+              <td width = '150px' style="text-align:center;height: 50px"> <h5>18/05 - 23/05</h5>
+              </td>
+              <td width = '600px' style="text-align:center;height: 50px"> <h5>Course Review</h5>
+              </td>
+              <td width = '400px' style="text-align:center;height: 50px"> <h5></h5>
+              </td>
+            </tr>
+
+            </table>
+         
+</div>
+<hr>
+
+
+</body>
+</html>
