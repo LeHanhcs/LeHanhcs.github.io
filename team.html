@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>lehanhcs.github.io</title>
+<link rel="icon" type="image/x-icon" href="/imgs/favicon.ico">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1 {font-family: "Raleway", Arial, sans-serif}
+h1 {letter-spacing: 6px}
+.w3-row-padding img {margin-bottom: 12px}
+#myBtn {
+  display:none; position:fixed; bottom:20px; right:20px; z-index:99;
+  font-size:18px; border:none; outline:none; background-color:blueviolet;
+  color:white; cursor:pointer; padding:15px; border-radius:4px;
+}
+#myBtn:hover {background-color:#555}
+.tooltip {position:relative; display:inline-block}
+.tooltip .tooltiptext {
+  visibility:hidden; width:600px; background-color:#fff; color:darkgrey;
+  text-align:justify; border-radius:6px; padding:5px 0;
+  top:-5px; left:50%; position:absolute; z-index:1;
+}
+.tooltip:hover .tooltiptext {visibility:visible}
+a:link, a:visited, a:hover, a:active {text-decoration:none}
+/* Shared navigation and mobile menu */
+.w3-top {z-index:50}
+.team-mobile-nav {display:none; background:#eee; border-bottom:1px solid #ccc}
+.team-mobile-nav a {display:block; padding:12px 18px; font-weight:600}
+.team-mobile-nav a:hover {background:#fff}
+@media(max-width:600px) { .team-mobile-nav.is-open {display:block} }
+/* Team page styling */
+:root { --accent:#966596; --teal:#5f9ea0; --ink:#26323b; --muted:#64727c; --line:#e8e8ed; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:#fdfefe; color:var(--ink); font-family:Raleway,Arial,sans-serif; }
+    a { text-decoration:none; }
+    
+    main { max-width:1150px; padding:55px 24px 80px; margin:auto; }
+    .intro { text-align:center; max-width:1200px; margin:0 auto 55px; }
+    .eyebrow { color:var(--teal); font-size:12px; font-weight:700; letter-spacing:.22em; text-transform:uppercase; }
+    h1 { font-size:36px; letter-spacing:3px; margin:14px 0; font-weight:700; }
+    .intro p { color:var(--muted); font-size:15px; line-height:1.9; }
+    .section { margin:0 0 58px; }
+    .section-title { display:flex; align-items:center; gap:18px; margin-bottom:26px; }
+    .section-title h2 { color:var(--accent); font-size:20px; font-weight:700; letter-spacing:.06em; margin:0; white-space:nowrap; }
+    .section-title::after { content:""; height:1px; background:var(--line); flex:1; }
+    .member-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:24px; }
+    /* Center two Ph.D. cards in the middle of the four-column desktop grid. */
+    @media(min-width:851px) {
+      .phd-section .member-card:first-child { grid-column:2; }
+      .phd-section .member-card:nth-child(2) { grid-column:3; }
+    }
+    .member-card { background:#fff; border:1px solid #ececf0; border-radius:12px; padding:32px 24px 28px; text-align:center; box-shadow:0 5px 22px rgba(32,47,60,.045); transition:transform .2s,box-shadow .2s; }
+    .member-card:hover { transform:translateY(-4px); box-shadow:0 10px 30px rgba(32,47,60,.11); }
+    .avatar { width:132px; height:132px; border-radius:50%; object-fit:cover; object-position:center; border:4px solid #f0f3f3; display:block; margin:0 auto 18px; background:#edf2f2; }
+    .member-name { margin:0 0 8px; font-size:17px; line-height:1.4; font-weight:700; color:#365d66; }
+    .member-role { display:block; color:#8a658c; font-size:12px; font-weight:700; letter-spacing:.06em; margin-bottom:16px; }
+    .research-label { font-size:11px; text-transform:uppercase; letter-spacing:.13em; color:#9a9fa6; font-weight:700; margin:0 0 7px; }
+    .research { font-size:13px; color:#58646c; line-height:1.7; min-height:44px; margin:0; }
+    footer { text-align:center; border-top:1px solid var(--line); padding:24px; font-size:12px; color:#7d858a; }
+    @media(max-width:850px) { .member-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+    @media(max-width:560px) { main { padding:36px 18px 55px; } h1 { font-size:28px; } .member-grid { grid-template-columns:1fr; } .section-title h2 { font-size:17px; } }
+</style>
+</head>
+<body style="background-color:#FDFEFE; color:black">
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1300px">
+<!-- Header: shared site navigation -->
+<header class="w3-panel w3-center w3-opacity" style="padding:28px 6px 5px 2px">
+  <div class="w3-top">
+    <div class="w3-bar w3-border" style="background-color:lightgray; font-weight:bold">
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="#mobileNav" onclick="openNav();return false;" aria-label="Toggle navigation"><i class="fa fa-bars"></i></a>
+      <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white"><i class="fa fa-home w3-margin-right"></i>HOME</a>
+      <a href="publication.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">PUBLICATIONS</a>
+      <a href="team.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white" aria-current="page">RESEARCH TEAM</a>
+      <a href="index.html#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">CONTACT</a>
+      <a href="publication.html#analysis" class="w3-bar-item w3-button w3-hide-small w3-hover-white">PUBLICATION METRIC</a>
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-button" title="Courses">COURSES &nbsp;<i class="fa fa-caret-down"></i></button>
+        <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+          <a href="course_PPL_F26.html" class="w3-bar-item w3-button">Principles of Programming Languages</a>
+          <a href="course_OOP_S26.html" class="w3-bar-item w3-button">Object – Oriented Programming</a>
+        </div>
+      </div>
+    </div>
+    <nav id="mobileNav" class="team-mobile-nav" aria-label="Mobile navigation">
+      <a href="index.html">HOME</a>
+      <a href="publication.html">PUBLICATIONS</a>
+      <a href="team.html" aria-current="page">RESEARCH TEAM</a>
+      <a href="index.html#contact">CONTACT</a>
+      <a href="publication.html#analysis">PUBLICATION METRIC</a>
+      <a href="course_PPL_F26.html">Principles of Programming Languages</a>
+      <a href="course_OOP_S26.html">Object – Oriented Programming</a>
+    </nav>
+  </div>
+</header>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+const mybutton = document.getElementById("myBtn");
+window.addEventListener('scroll', function () {
+  mybutton.style.display = (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) ? 'block' : 'none';
+});
+function topFunction() {window.scrollTo({top:0, behavior:'smooth'});}
+function openNav() {
+  const nav = document.getElementById('mobileNav');
+  nav.classList.toggle('is-open');
+}
+</script>
+  <main>
+    <div class="intro">
+      <h1 class="eyebrow" style="font-size: 36px; font-weight: 900;">RESEARCH TEAM</h1>
+      <p style="font-size: 16px; font-weight: 500;">The Visual Systems and Computer Graphics (VSCG) research group focuses on advancing research in Computer Vision, 
+        Computer Graphics, Multimedia, and Intelligent Visual Computing. 
+        Our work emphasizes the development of innovative AI-driven methods for visual content analysis, understanding, 
+        generation, and enhancement. By bridging theoretical foundations with practical applications, we aim to address emerging challenges 
+        in visual computing and explore interdisciplinary research opportunities. 
+        Through collaborative research and hands-on projects, VSCG provides a supportive environment 
+        for students to develop their research skills, foster creativity, and pursue academic and professional growth.</p>
+    </div>
+
+  <section class="section phd-section" aria-labelledby="phd-heading">
+      <div class="section-title"><h2 id="phd-heading">Advisor</h2></div>
+      <div class="member-grid">
+        <article class="member-card">
+          <img class="avatar" src="imgs/profile.png" alt="Portrait of Master&#x27;s Student 01" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 300 300%22%3E%3Crect width=%22300%22 height=%22300%22 fill=%22%23e8eff0%22/%3E%3Ccircle cx=%22150%22 cy=%22114%22 r=%2255%22 fill=%22%239eb7ba%22/%3E%3Cpath d=%22M48 290c4-75 40-112 102-112s98 37 102 112%22 fill=%22%239eb7ba%22/%3E%3C/svg%3E'">
+          <h3 class="member-name">Thi-Ngoc-Hanh Le, Ph.D</h3>          
+        </article>
+        
+        
+      </div>
+    </section>
+
+    <section class="section phd-section" aria-labelledby="phd-heading">
+      <div class="section-title"><h2 id="phd-heading">Ph.D&#x27;s Students</h2></div>
+      <div class="member-grid">
+        <article class="member-card">
+          <img class="avatar" src="imgs/team/master-01.jpg" alt="Portrait of Master&#x27;s Student 01" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 300 300%22%3E%3Crect width=%22300%22 height=%22300%22 fill=%22%23e8eff0%22/%3E%3Ccircle cx=%22150%22 cy=%22114%22 r=%2255%22 fill=%22%239eb7ba%22/%3E%3Cpath d=%22M48 290c4-75 40-112 102-112s98 37 102 112%22 fill=%22%239eb7ba%22/%3E%3C/svg%3E'">
+          <h3 class="member-name">Hoàng Cảnh Ngọc</h3>
+          <p class="research-label">Research topic</p>
+          <p class="research">Visual systems</p>
+          
+        </article>
+        <article class="member-card">
+          <img class="avatar" src="imgs/team/master-02.jpg" alt="Portrait of Master&#x27;s Student 02" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 300 300%22%3E%3Crect width=%22300%22 height=%22300%22 fill=%22%23e8eff0%22/%3E%3Ccircle cx=%22150%22 cy=%22114%22 r=%2255%22 fill=%22%239eb7ba%22/%3E%3Cpath d=%22M48 290c4-75 40-112 102-112s98 37 102 112%22 fill=%22%239eb7ba%22/%3E%3C/svg%3E'">
+          <h3 class="member-name">Trần Khai Minh</h3>
+          <span class="member-role">Co-advisor</span>
+          <p class="research-label">Research topic</p>
+          <p class="research">2D and 3D Heritage</p>
+        </article>
+        
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="master-heading">
+      <div class="section-title"><h2 id="master-heading">Master&#x27;s Students</h2></div>
+      <div class="member-grid">
+        <article class="member-card">
+          <img class="avatar" src="imgs/KyQuang.jpg" alt="Portrait of Master&#x27;s Student 01" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 300 300%22%3E%3Crect width=%22300%22 height=%22300%22 fill=%22%23e8eff0%22/%3E%3Ccircle cx=%22150%22 cy=%22114%22 r=%2255%22 fill=%22%239eb7ba%22/%3E%3Cpath d=%22M48 290c4-75 40-112 102-112s98 37 102 112%22 fill=%22%239eb7ba%22/%3E%3C/svg%3E'">
+          <h3 class="member-name">Nguyễn Kỳ Quang</h3>
+          
+        </article>
+        <article class="member-card">
+          <img class="avatar" src="imgs/team/master-02.jpg" alt="Portrait of Master&#x27;s Student 02" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 300 300%22%3E%3Crect width=%22300%22 height=%22300%22 fill=%22%23e8eff0%22/%3E%3Ccircle cx=%22150%22 cy=%22114%22 r=%2255%22 fill=%22%239eb7ba%22/%3E%3Cpath d=%22M48 290c4-75 40-112 102-112s98 37 102 112%22 fill=%22%239eb7ba%22/%3E%3C/svg%3E'">
+          <h3 class="member-name">Lâm Thái Sơn</h3>
+          <span class="member-role">Co-advisor</span>
+        </article>
+        <article class="member-card">
+          <img class="avatar" src="imgs/PhuongMai.jpg" alt="Portrait of Master&#x27;s Student 03" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 300 300%22%3E%3Crect width=%22300%22 height=%22300%22 fill=%22%23e8eff0%22/%3E%3Ccircle cx=%22150%22 cy=%22114%22 r=%2255%22 fill=%22%239eb7ba%22/%3E%3Cpath d=%22M48 290c4-75 40-112 102-112s98 37 102 112%22 fill=%22%239eb7ba%22/%3E%3C/svg%3E'">
+          <h3 class="member-name">Đặng Phương Mai</h3>
+        </article>
+        <article class="member-card">
+          <img class="avatar" src="imgs/team/master-04.jpg" alt="Portrait of Master&#x27;s Student 04" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 300 300%22%3E%3Crect width=%22300%22 height=%22300%22 fill=%22%23e8eff0%22/%3E%3Ccircle cx=%22150%22 cy=%22114%22 r=%2255%22 fill=%22%239eb7ba%22/%3E%3Cpath d=%22M48 290c4-75 40-112 102-112s98 37 102 112%22 fill=%22%239eb7ba%22/%3E%3C/svg%3E'">
+          <h3 class="member-name">Phạm Anh Huy</h3>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="collaborator-heading">
+      <div class="section-title"><h2 id="collaborator-heading">Research Collaborators</h2></div>
+      <div class="member-grid">
+        <article class="member-card">
+          <img class="avatar" src="imgs/HongSon.jpg" alt="Portrait of Research Collaborator 01" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 300 300%22%3E%3Crect width=%22300%22 height=%22300%22 fill=%22%23e8eff0%22/%3E%3Ccircle cx=%22150%22 cy=%22114%22 r=%2255%22 fill=%22%239eb7ba%22/%3E%3Cpath d=%22M48 290c4-75 40-112 102-112s98 37 102 112%22 fill=%22%239eb7ba%22/%3E%3C/svg%3E'">
+          <h3 class="member-name">B.Sc. Nguyễn Hồng Sơn</h3>
+        </article>
+        <article class="member-card">
+          <img class="avatar" src="imgs/QuynhNhu.jpg" alt="Portrait of Research Collaborator 02" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 300 300%22%3E%3Crect width=%22300%22 height=%22300%22 fill=%22%23e8eff0%22/%3E%3Ccircle cx=%22150%22 cy=%22114%22 r=%2255%22 fill=%22%239eb7ba%22/%3E%3Cpath d=%22M48 290c4-75 40-112 102-112s98 37 102 112%22 fill=%22%239eb7ba%22/%3E%3C/svg%3E'">
+          <h3 class="member-name">B.Sc. Dương Thị Quỳnh Như</h3>
+        </article>
+        <article class="member-card">
+          <img class="avatar" src="imgs/ThaoTrinh.jpg" alt="Portrait of Research Collaborator 03" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 300 300%22%3E%3Crect width=%22300%22 height=%22300%22 fill=%22%23e8eff0%22/%3E%3Ccircle cx=%22150%22 cy=%22114%22 r=%2255%22 fill=%22%239eb7ba%22/%3E%3Cpath d=%22M48 290c4-75 40-112 102-112s98 37 102 112%22 fill=%22%239eb7ba%22/%3E%3C/svg%3E'">
+          <h3 class="member-name">B.Sc. Nguyễn Hoàng Thảo Trinh</h3>
+        </article>
+        <article class="member-card">
+          <img class="avatar" src="imgs/QuynhAnh.jpg" alt="Portrait of Research Collaborator 04" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 300 300%22%3E%3Crect width=%22300%22 height=%22300%22 fill=%22%23e8eff0%22/%3E%3Ccircle cx=%22150%22 cy=%22114%22 r=%2255%22 fill=%22%239eb7ba%22/%3E%3Cpath d=%22M48 290c4-75 40-112 102-112s98 37 102 112%22 fill=%22%239eb7ba%22/%3E%3C/svg%3E'">
+          <h3 class="member-name">B.Sc. Hoàng Ngọc Quỳnh Anh</h3>
+        </article>
+        <article class="member-card">
+          <img class="avatar" src="imgs/team/collaborator-05.jpg" alt="Portrait of Research Collaborator 05" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 300 300%22%3E%3Crect width=%22300%22 height=%22300%22 fill=%22%23e8eff0%22/%3E%3Ccircle cx=%22150%22 cy=%22114%22 r=%2255%22 fill=%22%239eb7ba%22/%3E%3Cpath d=%22M48 290c4-75 40-112 102-112s98 37 102 112%22 fill=%22%239eb7ba%22/%3E%3C/svg%3E'">
+          <h3 class="member-name">B.Sc. Ngô Thị Thương</h3>
+        </article>        
+        <article class="member-card">
+          <img class="avatar" src="imgs/team/collaborator-05.jpg" alt="Portrait of Research Collaborator 05" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 300 300%22%3E%3Crect width=%22300%22 height=%22300%22 fill=%22%23e8eff0%22/%3E%3Ccircle cx=%22150%22 cy=%22114%22 r=%2255%22 fill=%22%239eb7ba%22/%3E%3Cpath d=%22M48 290c4-75 40-112 102-112s98 37 102 112%22 fill=%22%239eb7ba%22/%3E%3C/svg%3E'">
+          <h3 class="member-name">B.Sc. Phạm Nguyễn Đăng Khôi</h3>
+        </article>
+        <article class="member-card">
+          <img class="avatar" src="imgs/ThanhKhiem.jpg" alt="Portrait of Research Collaborator 05" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 300 300%22%3E%3Crect width=%22300%22 height=%22300%22 fill=%22%23e8eff0%22/%3E%3Ccircle cx=%22150%22 cy=%22114%22 r=%2255%22 fill=%22%239eb7ba%22/%3E%3Cpath d=%22M48 290c4-75 40-112 102-112s98 37 102 112%22 fill=%22%239eb7ba%22/%3E%3C/svg%3E'">
+          <h3 class="member-name">B.Sc. Nguyễn Thành Khiêm</h3>
+        </article>
+        <article class="member-card">
+          <img class="avatar" src="imgs/team/collaborator-06.jpg" alt="Portrait of Research Collaborator 06" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 300 300%22%3E%3Crect width=%22300%22 height=%22300%22 fill=%22%23e8eff0%22/%3E%3Ccircle cx=%22150%22 cy=%22114%22 r=%2255%22 fill=%22%239eb7ba%22/%3E%3Cpath d=%22M48 290c4-75 40-112 102-112s98 37 102 112%22 fill=%22%239eb7ba%22/%3E%3C/svg%3E'">
+          <h3 class="member-name">B.Sc. Phan Nguyễn Khánh Nguyên</h3>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="undergrad-heading">
+      <div class="section-title"><h2 id="undergrad-heading">Undergraduate Students</h2></div>
+      <div class="member-grid">
+        <article class="member-card">
+          <img class="avatar" src="imgs/MaiLongThien.png" alt="Portrait of Undergraduate Student 01" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 300 300%22%3E%3Crect width=%22300%22 height=%22300%22 fill=%22%23e8eff0%22/%3E%3Ccircle cx=%22150%22 cy=%22114%22 r=%2255%22 fill=%22%239eb7ba%22/%3E%3Cpath d=%22M48 290c4-75 40-112 102-112s98 37 102 112%22 fill=%22%239eb7ba%22/%3E%3C/svg%3E'">
+          <h3 class="member-name">Mai Long Thiên</h3>
+        </article>
+        <article class="member-card">
+          <img class="avatar" src="imgs/team/undergrad-02.jpg" alt="Portrait of Undergraduate Student 02" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 300 300%22%3E%3Crect width=%22300%22 height=%22300%22 fill=%22%23e8eff0%22/%3E%3Ccircle cx=%22150%22 cy=%22114%22 r=%2255%22 fill=%22%239eb7ba%22/%3E%3Cpath d=%22M48 290c4-75 40-112 102-112s98 37 102 112%22 fill=%22%239eb7ba%22/%3E%3C/svg%3E'">
+          <h3 class="member-name">Phạm Quang Sang</h3>
+        </article>
+        <article class="member-card">
+          <img class="avatar" src="imgs/QuynhNga.jpg" alt="Portrait of Undergraduate Student 03" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 300 300%22%3E%3Crect width=%22300%22 height=%22300%22 fill=%22%23e8eff0%22/%3E%3Ccircle cx=%22150%22 cy=%22114%22 r=%2255%22 fill=%22%239eb7ba%22/%3E%3Cpath d=%22M48 290c4-75 40-112 102-112s98 37 102 112%22 fill=%22%239eb7ba%22/%3E%3C/svg%3E'">
+          <h3 class="member-name">Nguyễn Thị Quỳnh Nga</h3>
+        </article>
+        <article class="member-card">
+          <img class="avatar" src="imgs/team/undergrad-04.jpg" alt="Portrait of Undergraduate Student 04" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 300 300%22%3E%3Crect width=%22300%22 height=%22300%22 fill=%22%23e8eff0%22/%3E%3Ccircle cx=%22150%22 cy=%22114%22 r=%2255%22 fill=%22%239eb7ba%22/%3E%3Cpath d=%22M48 290c4-75 40-112 102-112s98 37 102 112%22 fill=%22%239eb7ba%22/%3E%3C/svg%3E'">
+          <h3 class="member-name">Nguyễn Minh Đạt</h3>
+        </article>
+        <article class="member-card">
+          <img class="avatar" src="imgs/HoangPhuong.jpg" alt="Portrait of Undergraduate Student 05" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 300 300%22%3E%3Crect width=%22300%22 height=%22300%22 fill=%22%23e8eff0%22/%3E%3Ccircle cx=%22150%22 cy=%22114%22 r=%2255%22 fill=%22%239eb7ba%22/%3E%3Cpath d=%22M48 290c4-75 40-112 102-112s98 37 102 112%22 fill=%22%239eb7ba%22/%3E%3C/svg%3E'">
+          <h3 class="member-name">Phạm Hoàng Phương</h3>
+        </article>
+        <article class="member-card">
+          <img class="avatar" src="imgs/VanAnh.jpg" alt="Portrait of Undergraduate Student 06" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 300 300%22%3E%3Crect width=%22300%22 height=%22300%22 fill=%22%23e8eff0%22/%3E%3Ccircle cx=%22150%22 cy=%22114%22 r=%2255%22 fill=%22%239eb7ba%22/%3E%3Cpath d=%22M48 290c4-75 40-112 102-112s98 37 102 112%22 fill=%22%239eb7ba%22/%3E%3C/svg%3E'">
+          <h3 class="member-name">Nguyễn Ngọc Vân Anh</h3>
+        </article>
+        <article class="member-card">
+          <img class="avatar" src="imgs/ThanhTinh.jpg" alt="Portrait of Undergraduate Student 07" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 300 300%22%3E%3Crect width=%22300%22 height=%22300%22 fill=%22%23e8eff0%22/%3E%3Ccircle cx=%22150%22 cy=%22114%22 r=%2255%22 fill=%22%239eb7ba%22/%3E%3Cpath d=%22M48 290c4-75 40-112 102-112s98 37 102 112%22 fill=%22%239eb7ba%22/%3E%3C/svg%3E'">
+          <h3 class="member-name">Nguyễn Vũ Thành Tính</h3>
+        </article>
+        <article class="member-card">
+          <img class="avatar" src="imgs/AnhKhoi.jpg" alt="Portrait of Undergraduate Student 08" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 300 300%22%3E%3Crect width=%22300%22 height=%22300%22 fill=%22%23e8eff0%22/%3E%3Ccircle cx=%22150%22 cy=%22114%22 r=%2255%22 fill=%22%239eb7ba%22/%3E%3Cpath d=%22M48 290c4-75 40-112 102-112s98 37 102 112%22 fill=%22%239eb7ba%22/%3E%3C/svg%3E'">
+          <h3 class="member-name">Phạm Anh Khôi</h3>
+        </article>
+        <article class="member-card">
+          <img class="avatar" src="imgs/team/undergrad-09.jpg" alt="Portrait of Undergraduate Student 09" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 300 300%22%3E%3Crect width=%22300%22 height=%22300%22 fill=%22%23e8eff0%22/%3E%3Ccircle cx=%22150%22 cy=%22114%22 r=%2255%22 fill=%22%239eb7ba%22/%3E%3Cpath d=%22M48 290c4-75 40-112 102-112s98 37 102 112%22 fill=%22%239eb7ba%22/%3E%3C/svg%3E'">
+          <h3 class="member-name">Nguyễn Thế Hào</h3>
+        </article>  
+        <article class="member-card">
+          <img class="avatar" src="imgs/team/undergrad-09.jpg" alt="Portrait of Undergraduate Student 09" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 300 300%22%3E%3Crect width=%22300%22 height=%22300%22 fill=%22%23e8eff0%22/%3E%3Ccircle cx=%22150%22 cy=%22114%22 r=%2255%22 fill=%22%239eb7ba%22/%3E%3Cpath d=%22M48 290c4-75 40-112 102-112s98 37 102 112%22 fill=%22%239eb7ba%22/%3E%3C/svg%3E'">
+          <h3 class="member-name">Nguyễn Quỳnh Anh</h3>
+        </article>       
+      </div>
+    </section>
+  </main>
+  <footer>Research Team · Visual Systems and Computer Graphics · International University, VNU-HCM</footer>
+</div>
+</body>
+</html>
